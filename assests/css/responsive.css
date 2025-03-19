@@ -13,7 +13,7 @@
 	h6
 	{
 		letter-spacing: 1px;
-		font-size:16px;
+		font-size:12px;
 		line-height:25px;
 		padding: 0 2rem !important;
 	}
@@ -32,10 +32,20 @@
 	{
 		display: none;
 	}
-	.foot-part1
-	{
-		margin-top:-73px;
-		text-align: center;
+	.foot-part1 .row {
+		flex-direction: column;
+	}
+	.foot-part1 .col-7 {
+		max-width: 100% !important;
+	}
+	.foot-part1 .col-5 {
+		max-width: 100%;
+	}
+	.foot-part1 .px-5 {
+		padding-left: 1rem !important;
+	}
+	.foot-part1 .p-5 {
+		padding: 2rem !important;;
 	}
 	.foot-part1 p
 	{
