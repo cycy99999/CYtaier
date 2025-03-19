@@ -87,6 +87,12 @@ a.video-button {
 	padding: 0 5%;
 	max-width: 100% !important;
 }
+.main-btn {
+	display: none;
+}
+.main-btn .p-3{
+	padding: 0.5rem !important;
+}
 
 .fenge {
 	width: 80%;
@@ -518,6 +524,14 @@ a {
 }
 
 @media (max-width: 991.98px) {
+	.text-navbar  {
+		display: flex;
+		flex-direction: column;
+    align-items: flex-end;
+	}
+	.navbar ul li {
+		margin-top: 4rem;
+	}
 	.fourlist {
 		display: none !important;
 	}
@@ -526,6 +540,18 @@ a {
 	}
 	h1 {
 		font-size: 32px !important;
+	}
+	.jianju {
+		letter-spacing: 1px;
+	}
+	.slider-part .justify-content-center {
+		justify-content: left !important;
+	}
+	.slider-part .container {
+		padding-bottom: 12% !important;
+	}
+	.main-btn {
+		display: block;
 	}
 	.fenge {
 		margin: 2rem 5% 0 5% !important;
@@ -540,7 +566,9 @@ a {
 	.channel-part img {
 		padding: 1rem 0 !important;
 	}
-
+	.p-4 {
+		padding: 0 !important;
+	}
 	.my-5 {
 		margin: 3rem 0 2rem 0 !important;
 	}
