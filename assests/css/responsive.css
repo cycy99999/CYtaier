@@ -28,6 +28,10 @@
 		color:#fff;
 		outline: none;
 	}
+	.navbar-toggler:focus {
+		/* outline: none; */
+		  outline: 1px solid rgba(255, 255, 255, 0.9); /* 设置为 1px 宽度的 outline */
+	}
 	#owl-demo.owl-theme .owl-nav .owl-next , #owl-demo.owl-theme .owl-nav .owl-prev
 	{
 		display: none;
