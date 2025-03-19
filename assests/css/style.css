@@ -13,9 +13,6 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-family: 'SourceSongti', serif;
 }
-section {
-	margin-bottom: 7rem;
-}
 
 /*.. Homepage ..*/
 .animation-slider {
@@ -93,9 +90,12 @@ a.video-button {
 
 .fenge {
 	width: 80%;
-	margin-bottom: -5rem;
+	margin: 1rem 10% 4rem 10%;
 	border-color: rgba(0, 23, 75, 0.3);
 	border-bottom-style: solid;
+}
+.py-lg-3 {
+	padding-bottom: 0 !important;
 }
 
 
@@ -518,9 +518,6 @@ a {
 }
 
 @media (max-width: 991.98px) {
-	section {
-		margin-bottom: 3rem !important;
-	}
 	.fourlist {
 		display: none !important;
 	}
@@ -531,7 +528,7 @@ a {
 		font-size: 32px !important;
 	}
 	.fenge {
-		margin-bottom: -4rem !important;
+		margin: 2rem 5% 0 5% !important;
 		width: 90%;
 	}
 	.px-right {
@@ -543,9 +540,7 @@ a {
 	.channel-part img {
 		padding: 1rem 0 !important;
 	}
-	.channel-part {
-		margin-bottom: 5rem !important;
-	}
+
 	.my-5 {
 		margin: 3rem 0 2rem 0 !important;
 	}
