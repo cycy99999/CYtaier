@@ -1,22 +1,10 @@
-/*
-Template Name: Shuruwat - Software/Marketing Agency HTML Template
-Author: Askbootstrap
-Author URI: https://www.templatemonster.com/vendors/Askbootstrap
-Version: 1.0
-*/
-
-/*
-  -- Body
-  -- Homepage
-  -- About Page
-  -- Engineering
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@font-face { font-family: 'SourceSongti'; src: url('../fonts/SourceHanSerifSC-VF.otf.woff2') format('woff2'); /* 字体文件路径 */ font-weight: normal; font-style: normal; }
 
 /*.. Body ..*/
 body {
 	font-family: 'Poppins', sans-serif;
+	font-family: 'SourceSongti', serif;
 }
 
 /*.. Homepage ..*/
@@ -39,7 +27,7 @@ a.video-button {
 }
 
 .text-navbar li a {
-	font-size: 16px;
+	font-size: 18px;
 	color: white;
 	margin: 14px;
 }
@@ -62,7 +50,7 @@ a.video-button {
 }
 
 .navbar-scrolled {
-	border-color: #aaa;
+	border-color: rgba(255, 255, 255, 0.3);
 	border-bottom-style: solid;
 	background-color: #00174B !important;
 	/* 滚动后的背景色 */
@@ -105,7 +93,7 @@ h2 {
 
 h4 {
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 300;
 	width: 86%;
 	height: 80px;
 	overflow: overlay;
