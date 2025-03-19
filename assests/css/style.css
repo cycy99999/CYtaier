@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
-@font-face { font-family: 'SourceSongti'; src: url('../fonts/SourceHanSerifSC-VF.otf.woff2') format('woff2'); /* 字体文件路径 */ font-weight: normal; font-style: normal; }
+
+@font-face {
+	font-family: 'SourceSongti';
+	src: url('../fonts/SourceHanSerifSC-VF.otf.woff2') format('woff2');
+	/* 字体文件路径 */
+	font-weight: normal;
+	font-style: normal;
+}
 
 /*.. Body ..*/
 body {
 	font-family: 'Poppins', sans-serif;
 	font-family: 'SourceSongti', serif;
+}
+section {
+	margin-bottom: 7rem;
 }
 
 /*.. Homepage ..*/
@@ -65,7 +75,7 @@ a.video-button {
 }
 
 .fullscreen-bg {
-    background-image: linear-gradient(180deg, rgba(0,23,75,0) 60%, rgba(0,23,75,1) 100%), url('../images/pexels-jibar2ofoto-1753260.jpg');
+	background-image: linear-gradient(180deg, rgba(0, 23, 75, 0) 60%, rgba(0, 23, 75, 1) 100%), url('../images/pexels-jibar2ofoto-1753260.jpg');
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
@@ -77,8 +87,15 @@ a.video-button {
 }
 
 .container {
-	margin: 0 5%;
+	padding: 0 5%;
 	max-width: 100% !important;
+}
+
+.fenge {
+	width: 80%;
+	margin-bottom: -5rem;
+	border-color: rgba(0, 23, 75, 0.3);
+	border-bottom-style: solid;
 }
 
 h1 {
@@ -98,9 +115,11 @@ h4 {
 	height: 80px;
 	overflow: overlay;
 }
+
 h4::-webkit-scrollbar {
-    display: none;
+	display: none;
 }
+
 .jianju {
 	letter-spacing: 4px;
 }
@@ -118,6 +137,10 @@ h6 {
 p {
 	font-weight: 500;
 	letter-spacing: 0.5px;
+}
+
+.px-right {
+	padding-right: 12rem !important;
 }
 
 .owl-stage-outer:hover {
@@ -173,9 +196,10 @@ p {
 }
 
 .channel-part img {
-	width: 500px;
-	height: 400px;
 	padding: 20px;
+}
+.channel-part {
+	padding: 0 3%;
 }
 
 #owl-demo .item img {
