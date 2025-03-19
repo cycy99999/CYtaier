@@ -98,6 +98,7 @@ a.video-button {
 	border-bottom-style: solid;
 }
 
+
 h1 {
 	font-weight: bold;
 	font-size: 52px;
@@ -514,4 +515,44 @@ a {
 	padding: 0px 15px 0px 0px;
 	max-width: 120px;
 	margin: 0px 10px 0px 9px;
+}
+
+@media (max-width: 991.98px) {
+	section {
+		margin-bottom: 3rem !important;
+	}
+	.fourlist {
+		display: none !important;
+	}
+	h2 {
+		font-size: 16px !important;
+	}
+	h1 {
+		font-size: 32px !important;
+	}
+	.fenge {
+		margin-bottom: -4rem !important;
+		width: 90%;
+	}
+	.px-right {
+		padding-right: 0 !important;
+	}
+	.text-center {
+		text-align: left !important;
+	}
+	.channel-part img {
+		padding: 1rem 0 !important;
+	}
+	.channel-part {
+		margin-bottom: 5rem !important;
+	}
+	.my-5 {
+		margin: 3rem 0 2rem 0 !important;
+	}
+	.py-5 {
+		padding: 1.5rem 0 !important;
+	}
+	.pt-3 {
+		font-size: 0.8rem !important;
+	}
 }
