@@ -19,20 +19,6 @@ body {
 	animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
-.video-button i.fa.fa-play {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	color: #611f69;
-	font-size: 50px;
-}
-
-a.video-button {
-	position: relative;
-}
-
 .text-navbar li a {
 	font-size: 18px;
 	color: white;
@@ -41,7 +27,7 @@ a.video-button {
 
 .navbtn {
 	color: #fff !important;
-	background-color: #611f69 !important;
+	background-color: #00174B !important;
 	font-size: 13px;
 	width: 130px;
 	height: 40px;
@@ -67,16 +53,12 @@ a.video-button {
 	height: 54px;
 }
 
-.navbar-brand {
-	font-size: 30px;
-}
-
 .fullscreen-bg {
 	background-image: linear-gradient(180deg, rgba(0, 23, 75, 0) 60%, rgba(0, 23, 75, 1) 100%), url('../images/pexels-jibar2ofoto-1753260.jpg');
 	background-size: cover;
 	background-position: center center;
 	width: 100%;
-	height: 90vh;
+	height: 93vh;
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -87,11 +69,13 @@ a.video-button {
 	padding: 0 5%;
 	max-width: 100% !important;
 }
+
 .main-btn {
-	display: none;
+	display: none !important;
 }
-.main-btn .p-3{
-	padding: 0.5rem !important;
+
+.main-btn .p-3 {
+	padding: 0.5rem 1rem !important;
 }
 
 .fenge {
@@ -100,6 +84,7 @@ a.video-button {
 	border-color: rgba(0, 23, 75, 0.3);
 	border-bottom-style: solid;
 }
+
 .py-lg-3 {
 	padding-bottom: 0 !important;
 }
@@ -119,7 +104,7 @@ h4 {
 	font-size: 15px;
 	font-weight: 300;
 	width: 86%;
-	height: 80px;
+	height: 100px;
 	overflow: overlay;
 }
 
@@ -139,6 +124,8 @@ h6 {
 	letter-spacing: 1px;
 	font-size: 18px;
 	line-height: 25px;
+	font-size: 14px; 
+	padding: 0 6rem;
 }
 
 p {
@@ -146,136 +133,33 @@ p {
 	letter-spacing: 0.5px;
 }
 
-.px-right {
-	padding-right: 12rem !important;
-}
-
-.owl-stage-outer:hover {
-	transform: scale(1.05);
-	border: none !important;
-}
-
-.owl-stage-outer {
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1) !important;
-	border-radius: 3px;
-	transition: transform .7s ease-in-out;
-}
-
-.hoverzoom {
-	transition: transform .5s linear;
-}
-
-.hoverzoom:hover {
-	transform: scale(1.05);
-	border: none !important;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2) !important;
-}
-
-.hovershadow {
-	box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-	border-radius: 4px;
-}
-
-.Shuruwat-btn {
-	color: #fff !important;
-	background-color: #611f69;
-	font-size: 15px;
-	width: 170px;
-	height: 60px;
-	font-weight: bold;
-}
-
-.Shuruwat-btn2 {
-	color: #611f69 !important;
-	border: 1px solid #611f69;
-	font-size: 15px;
-	width: 190px;
-	height: 60px;
-	font-weight: bold;
-}
-
 .slider-part {
-	background-color: #611f69;
-}
-
-.service-part img {
-	height: 50px;
-}
-
-.channel-part img {
-	padding: 20px;
-}
-.channel-part {
-	padding: 0 3%;
-}
-
-#owl-demo .item img {
-	display: block;
-	height: auto;
-}
-
-#owl-demo.owl-theme .owl-nav .owl-prev {
-	position: absolute;
-	top: 30%;
-	left: -5%;
-	width: 26px;
-	height: 26px;
-	outline: none;
-	font-size: 5em;
-	color: grey;
-}
-
-#owl-demo.owl-theme .owl-nav .owl-next {
-	position: absolute;
-	top: 30%;
-	right: -5%;
-	width: 26px;
-	height: 26px;
-	outline: none;
-	font-size: 5em;
-	color: grey;
-}
-
-#owl-demo.owl-theme .owl-dots {
-	margin-top: 35px;
-}
-
-#owl-demo.owl-theme .owl-dots .owl-dot.active {
-	background-color: #611f69;
-}
-
-#owl-demo.owl-theme .owl-dots .owl-dot {
-	background-color: #c4c4c4;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	margin: 7px;
-}
-
-.card-border {
-	border: none;
+	background-color: #00174B;
 }
 
 .contact-part {
-	background-image: url('../images/contact.png');
-	background-color: #49154a;
-	color: #fff;
+	margin-top: 5rem;
+	background-image: linear-gradient(180deg, rgba(0, 23, 75, 0) 0%, rgba(0, 23, 75, 1) 90% ) ,url('../images/us.jpg');
+	background-color: #00174B;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	color: white;
 }
 
 .contact-btn {
-	color: #49154a !important;
+	color: #00174B !important;
 	background-color: #fff;
-	font-size: 15px;
 	width: 170px;
 	height: 60px;
 	font-weight: bold;
-	border: 2px #49154a;
+	border: 2px #00174B;
 }
 
 .contact-btn:hover {
-	box-shadow: inset 0 0 0 2px #49154a;
+	box-shadow: inset 0 0 0 2px #00174B;
 	background-color: #fff;
-	fill: #49154a;
+	fill: #00174B;
 }
 
 .contact-btn2 {
@@ -289,10 +173,12 @@ p {
 
 .contact-btn2:hover {
 	box-shadow: inset 0 0 0 1px #fff;
-	background-color: #49154a;
 	fill: #fff;
 }
 
+.foot-part1 {
+/* 	background-color: #00174B */;
+}
 .foot-part1 img {
 	width: 70px;
 	height: 70px;
@@ -387,9 +273,9 @@ p {
 }
 
 .about-aboutpart a {
-	color: #611f69;
+	color: #00174B;
 	text-decoration: none;
-	border-bottom: 2px solid #611f69;
+	border-bottom: 2px solid #00174B;
 	cursor: pointer;
 	font-weight: bold;
 }
@@ -407,15 +293,15 @@ p {
 }
 
 .direction-bg {
-	color: #611f69;
+	color: #00174B;
 }
 
 a {
-	color: #611f69;
+	color: #00174B;
 }
 
 .hoverzoom:hover .direction-bg {
-	background: #611f69;
+	background: #00174B;
 	color: #fff !important;
 }
 
@@ -435,7 +321,7 @@ a {
 }
 
 .page3-slider ul li a:hover {
-	color: #611f69;
+	color: #00174B;
 }
 
 .page3-slider ul li a i {
@@ -456,13 +342,13 @@ a {
 
 .page3-slider button {
 	color: #fff !important;
-	background-color: #611f69;
+	background-color: #00174B;
 	font-size: 15px;
 	width: 170px;
 	height: 50px;
 	border-radius: .25rem;
 	font-weight: bold;
-	outline-color: #611f69;
+	outline-color: #00174B;
 	border: 0;
 	font-size: 14px;
 }
@@ -524,57 +410,83 @@ a {
 }
 
 @media (max-width: 991.98px) {
-	.text-navbar  {
+	.channel-part .row .order-1 {
+		order: initial;
+		/* 恢复为文档顺序 */
+	}
+
+	.channel-part .row .order-2 {
+		order: initial;
+		/* 恢复为文档顺序 */
+	}
+
+	.text-navbar {
 		display: flex;
 		flex-direction: column;
-    align-items: flex-end;
+		align-items: flex-end;
 	}
+
 	.navbar ul li {
 		margin-top: 4rem;
 	}
+
 	.fourlist {
 		display: none !important;
 	}
+
 	h2 {
 		font-size: 16px !important;
 	}
+
 	h1 {
 		font-size: 32px !important;
 	}
+
 	.jianju {
 		letter-spacing: 1px;
 	}
+
 	.slider-part .justify-content-center {
+		margin: 1rem;
 		justify-content: left !important;
 	}
+
 	.slider-part .container {
 		padding-bottom: 12% !important;
 	}
-	.main-btn {
-		display: block;
+	.channel-part .text-center {
+		text-align: left !important;
 	}
+
+	.main-btn {
+		display: block !important;
+	}
+
 	.fenge {
 		margin: 2rem 5% 0 5% !important;
 		width: 90%;
 	}
+
 	.px-right {
 		padding-right: 0 !important;
 	}
-	.text-center {
-		text-align: left !important;
-	}
+
 	.channel-part img {
 		padding: 1rem 0 !important;
 	}
+
 	.p-4 {
 		padding: 0 !important;
 	}
+
 	.my-5 {
 		margin: 3rem 0 2rem 0 !important;
 	}
+
 	.py-5 {
 		padding: 1.5rem 0 !important;
 	}
+
 	.pt-3 {
 		font-size: 0.8rem !important;
 	}
