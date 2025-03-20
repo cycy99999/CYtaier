@@ -1,54 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading Spinner with Min Duration</title>
-  <!-- 引用 Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* 定义加载动画的样式，使其占满整个屏幕 */
-    .loader-wrapper {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(255, 255, 255, 0.7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 9999;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 透明度与高光切换轮播图</title>
+    <!-- 引入 Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- 自定义 CSS -->
+    <style>
+        /* 使轮播图的容器占满整个屏幕 */
+        .carousel,
+        .carousel-inner {
+            height: 100vh;  /* 高度为视口高度 */
+            width: 100vw;   /* 宽度为视口宽度 */
+        }
+
+        .carousel-item {
+            height: 100%;  /* 使每个轮播项的高度占满父容器 */
+			opacity: 0;
+            background-size: cover;  /* 保证图片覆盖 */
+            background-position: center center; /* 保持图片居中 */
+/*            transition: transform 5s ease-in-out */;
+        }
+
+        .carousel-item img {
+            width: 100%;  /* 保证图片的宽度填满容器 */
+            height: 100%; /* 保证图片的高度填满容器 */
+            object-fit: cover; /* 保证图片不失真，裁剪多余部分 */
+            transition: transform 5s ease-out;
+        }
+
+        .carousel-item.active img {
+            transform: scale(1.1);  /* 当前图片放大 */
+        }
+    </style>
+	<script defer>
+	        var carouselElement;
+	        var carousel;
+	
+	        // 在 HTML 解析完成后执行（但还不等待图片等其他资源加载）
+	        document.addEventListener("DOMContentLoaded", function() {
+	            carouselElement = document.getElementById('carouselExample');
+	            carousel = new bootstrap.Carousel(carouselElement);
+	            carousel.next();  // 切换到下一项
+	        });
+	    </script>
 </head>
 <body>
 
-  <!-- 加载动画的 div -->
-  <div class="loader-wrapper" id="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./assests/images/pic1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./assests/images/pic2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./assests/images/pic3.jpg" class="d-block w-100" alt="...">
+        </div>
     </div>
-  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-  <!-- 页面内容 -->
-  <div class="container">
-    <h1 class="mt-5">欢迎来到我的网站</h1>
-    <p>这里是网站的内容...</p>
-  </div>
+<!-- 引入 Bootstrap 和必要的 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- 引用 Bootstrap 和 jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-    // 页面加载完成后隐藏加载动画，确保最少显示2秒
-    $(window).on('load', function() {
-      // 设置一个最小的显示时间 2 秒
-      setTimeout(function() {
-        $('#loader').fadeOut('slow');  // 隐藏加载动画
-      }, 2000);  // 2秒后隐藏加载动画
-    });
-  </script>
 </body>
 </html>

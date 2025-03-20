@@ -11,6 +11,9 @@ body {
 	font-family: 'Poppins', sans-serif;
 	font-family: 'SourceSongti', serif;
 }
+a {
+	text-decoration: none;
+}
 
 /* 加载动画 */
 .loader-wrapper {
@@ -99,6 +102,7 @@ body {
 		transform: rotateX(360deg) rotateY(360deg);
 	}
 }
+
 /* 加载动画 */
 
 
@@ -135,7 +139,6 @@ body {
 	border-color: rgba(255, 255, 255, 0.3);
 	border-bottom-style: solid;
 	background-color: #00174B !important;
-	/* 滚动后的背景色 */
 }
 
 .logoimg {
@@ -143,20 +146,52 @@ body {
 }
 
 .fullscreen-bg {
-	background-image: linear-gradient(180deg, rgba(0, 23, 75, 0) 60%, rgba(0, 23, 75, 1) 100%), url('../images/pexels-jibar2ofoto-1753260.jpg');
+/* 	background-image: linear-gradient(180deg, rgba(0, 23, 75, 0) 60%, rgba(0, 23, 75, 1) 100%), url('../images/pexels-jibar2ofoto-1753260.jpg'); */
 	background-size: cover;
 	background-position: center center;
+	position: absolute;
 	width: 100%;
-	height: 93vh;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	color: white;
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+	z-index: 0;
+}
+
+.carousel::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(0, 23, 75, 0) 60%, rgba(0, 23, 75, 1) 100%);
+	z-index: 1;
+}
+
+.carousel-item {
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 10s ease-out;
+}
+
+.carousel-item.active img {
+	transform: scale(1.1);
 }
 
 .container {
+	position: relative;
 	padding: 0 5%;
 	max-width: 100% !important;
+	z-index: 2;
 }
 
 .main-btn {
@@ -223,7 +258,10 @@ p {
 }
 
 .slider-part {
-	background-color: #00174B;
+	height: 93vh;
+	display: flex;
+	align-items: flex-end;
+	color: #fff;
 }
 
 .contact-part {
